@@ -38,7 +38,7 @@ def predict(face):
     if face[0][0][0] > 1:    face = face / 255.
     if face.shape[0] != WIDTH or face.shape[1] != HEIGHT:   face = cv2.resize(face, (WIDTH, HEIGHT))
 
-    prediction = list(features_pred.predict(face.reshape(1, HEIGHT, WIDTH, -1))[0])
+    prediction = list(features_preds.predict(face.reshape(1, HEIGHT, WIDTH, -1))[0])
     prediction = [round(v,2) for v in prediction]
 
     columns_features = columns[5:]
