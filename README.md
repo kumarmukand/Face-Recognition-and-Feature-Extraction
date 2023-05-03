@@ -12,7 +12,7 @@ This project is designed to detect faces in images and extract features from the
 # Installation
 1. Download the Zip file from Project Repository 
 2. Install the required packages:
-pip install opencv-python numpy tensorflow keras
+- pip install opencv-python numpy tensorflow keras
 
 # Usage
 1. To detect faces in an image, run the following command:
